@@ -65,6 +65,8 @@ Funny notes as I was taking the old circuit apart.
 
 As usual I can't leave anything alone. Nothing is ever truly completed is it.
 
+![taken apart](doc/IMG_0081.jpg)
+
 I ripped apart the old circuit and removed the parts from the chassis.  The front panel and bottom was a bit bent up from this being knocked around in storage I guess.
 
 ### Support more current output
@@ -136,3 +138,12 @@ Of course the devil is in the details.
 This op-amp requires its own +/-15V power supply.  But we are already building a power supply. And these are adjustable outputs at that.
 
 So I added a small current +/-15V regulators here. These are smlal so-8 packages that are good for up to about 100mA. The op-amps I have here use much less than that.  I do not expose this supply as an output to be used off the power supply. Though I guess I could have. I didn't want this internal power that is used to control the regulators to be compromised by loading or shorting it out.
+
+## PCB
+
+I ordered the PCB from
+
+<a href="https://oshpark.com/shared_projects/tLXbXLEt"><img src="https://oshpark.com/packs/media/images/badge-5f4e3bf4bf68f72ff88bd92e0089e9cf.png" alt="Order from OSH Park"></img></a>
+
+As of October 2020, I am still waiting for the board to arrive.
+
