@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name opamp_power_supply-cache)(type Legacy)(uri ${KIPRJMOD}/opamp_power_supply/opamp_power_supply-cache.lib)(options "")(descr ""))
+)

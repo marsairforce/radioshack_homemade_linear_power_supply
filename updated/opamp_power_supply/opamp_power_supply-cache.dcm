@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP op-amp-power-supply
+D Custom power supply PCB module.
+$ENDCMP
+#
+#End Doc Library

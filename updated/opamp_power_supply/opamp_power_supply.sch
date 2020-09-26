@@ -1,0 +1,662 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 31496 19685
+encoding utf-8
+Sheet 1 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L local:Hammond_229B34 T1
+U 1 1 5F5C53CC
+P 2150 2550
+F 0 "T1" H 2125 3338 50  0000 C CNN
+F 1 "Hammond_229B34" H 2125 3247 50  0000 C CNN
+F 2 "Transformers:Hammond_229_series_low_profile_transformers" H 2100 3100 50  0001 C CNN
+F 3 "" H 2400 3200 50  0001 C CNN
+F 4 "PWR XFMR SEMI-TORO 12VA TH" H 2150 2550 50  0001 C CNN "Description"
+F 5 "229B34" H 2150 2550 50  0001 C CNN "Digi-Key_PN"
+	1    2150 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2250 1700 2250
+Wire Wire Line
+	1700 2250 1700 2150
+Wire Wire Line
+	1700 2150 1800 2150
+Wire Wire Line
+	1800 1950 1600 1950
+Wire Wire Line
+	1600 2450 1800 2450
+Wire Wire Line
+	1400 1950 1600 1950
+Connection ~ 1600 1950
+$Comp
+L opamp_power_supply-rescue:CP-Device C1
+U 1 1 5F6204FE
+P 3650 1900
+F 0 "C1" H 3768 1946 50  0000 L CNN
+F 1 "3000uF" H 3768 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_18x22" H 3688 1750 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1247.pdf" H 3650 1900 50  0001 C CNN
+F 4 "‎P122503CT-ND‎" H 3650 1900 50  0001 C CNN "Digi-Key_PN"
+F 5 "35V" H 3650 1900 50  0001 C CNN "Voltage"
+F 6 "CAP ALUM 3000UF 20% 35V SMD" H 3650 1900 50  0001 C CNN "Description"
+	1    3650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L opamp_power_supply-rescue:CP-Device C2
+U 1 1 5F5E86DB
+P 3650 2500
+F 0 "C2" H 3768 2546 50  0000 L CNN
+F 1 "3000uF" H 3768 2455 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_18x22" H 3688 2350 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDE0000/ABA0000C1247.pdf" H 3650 2500 50  0001 C CNN
+F 4 "‎P122503CT-ND‎" H 3650 2500 50  0001 C CNN "Digi-Key_PN"
+F 5 "35V" H 3650 2500 50  0001 C CNN "Voltage"
+F 6 "CAP ALUM 3000UF 20% 35V SMD" H 3650 2500 50  0001 C CNN "Description"
+	1    3650 2500
+	1    0    0    -1  
+$EndComp
+Text Notes 10100 750  0    50   ~ 0
+A screw terminal output \nper channel in the amplifier
+$Comp
+L Device:Fuse F1
+U 1 1 5F5D29F4
+P 1250 1950
+F 0 "F1" V 1053 1950 50  0000 C CNN
+F 1 "120mA" V 1144 1950 50  0000 C CNN
+F 2 "footprints:Fuseholder5x20_horiz_open_lateral_Type-II" V 1180 1950 50  0001 C CNN
+F 3 "~" H 1250 1950 50  0001 C CNN
+F 4 "FUSE GLASS 125MA 250VAC 5X20MM" H 1250 1950 50  0001 C CNN "Description"
+F 5 "F4714-ND" H 1250 1950 50  0001 C CNN "Digi-Key_PN"
+F 6 "+ 01110501Z holder x2" H 1250 1950 50  0001 C CNN "DK_Detail_Page"
+	1    1250 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F90B416
+P 1000 900
+F 0 "H1" H 1100 949 50  0000 L CNN
+F 1 "hole" H 1100 858 50  0000 L CNN
+F 2 "footprints:Mounting_Hole_Plated_M2.5" H 1000 900 50  0001 C CNN
+F 3 "~" H 1000 900 50  0001 C CNN
+	1    1000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F912071
+P 1300 900
+F 0 "H2" H 1400 949 50  0000 L CNN
+F 1 "hole" H 1400 858 50  0000 L CNN
+F 2 "footprints:Mounting_Hole_Plated_M2.5" H 1300 900 50  0001 C CNN
+F 3 "~" H 1300 900 50  0001 C CNN
+	1    1300 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F91FBEC
+P 1700 900
+F 0 "H3" H 1800 949 50  0000 L CNN
+F 1 "hole" H 1800 858 50  0000 L CNN
+F 2 "footprints:Mounting_Hole_Plated_M2.5" H 1700 900 50  0001 C CNN
+F 3 "~" H 1700 900 50  0001 C CNN
+	1    1700 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F91FBF6
+P 2000 900
+F 0 "H4" H 2100 949 50  0000 L CNN
+F 1 "hole" H 2100 858 50  0000 L CNN
+F 2 "footprints:Mounting_Hole_Plated_M2.5" H 2000 900 50  0001 C CNN
+F 3 "~" H 2000 900 50  0001 C CNN
+	1    2000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F9284BB
+P 1500 1000
+F 0 "#PWR02" H 1500 750 50  0001 C CNN
+F 1 "GND" H 1505 827 50  0000 C CNN
+F 2 "" H 1500 1000 50  0001 C CNN
+F 3 "" H 1500 1000 50  0001 C CNN
+	1    1500 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1000 1300 1000
+Wire Wire Line
+	1500 1000 1300 1000
+Connection ~ 1300 1000
+Wire Wire Line
+	1700 1000 1500 1000
+Connection ~ 1500 1000
+Wire Wire Line
+	2000 1000 1700 1000
+Connection ~ 1700 1000
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 5F67A2B1
+P 850 2050
+F 0 "J1" H 768 2367 50  0000 C CNN
+F 1 "AC IN" H 768 2276 50  0000 C CNN
+F 2 "Connector_Terminal_Block:TerminalBlock-3_P5.08mm" H 850 2050 50  0001 C CNN
+F 3 "https://www.on-shore.com/wp-content/uploads/OSTTAXX4163.pdf" H 850 2050 50  0001 C CNN
+F 4 "ED2581-ND" H 850 2050 50  0001 C CNN "Digi-Key_PN"
+	1    850  2050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1950 1050 1950
+Wire Wire Line
+	1050 2050 1150 2050
+Wire Wire Line
+	1150 2050 1150 2300
+$Comp
+L power:Earth #PWR01
+U 1 1 5F68CF49
+P 1150 2300
+F 0 "#PWR01" H 1150 2050 50  0001 C CNN
+F 1 "Earth" H 1150 2150 50  0001 C CNN
+F 2 "" H 1150 2300 50  0001 C CNN
+F 3 "~" H 1150 2300 50  0001 C CNN
+	1    1150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:MBRD6100CTTR D5
+U 1 1 5F6C6A93
+P 3200 1300
+F 0 "D5" H 3250 1425 50  0000 C CNN
+F 1 "MBRD6100CTTR" H 3200 1000 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3900 1600 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/MBRD6100CT%20N0811%20REV.A.pdf" H 3400 900 50  0001 C CNN
+F 4 "1655-1487-1-ND " H 3700 1700 50  0001 C CNN "Digi-Key_PN"
+	1    3200 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:MBRD6100CTTR D1
+U 1 1 5F6C8032
+P 2850 1300
+F 0 "D1" H 2900 1425 50  0000 C CNN
+F 1 "MBRD6100CTTR" H 2850 1000 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3550 1600 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/MBRD6100CT%20N0811%20REV.A.pdf" H 3050 900 50  0001 C CNN
+F 4 "1655-1487-1-ND " H 3350 1700 50  0001 C CNN "Digi-Key_PN"
+	1    2850 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:MBRD6100CTTR D6
+U 1 1 5F6DE9B3
+P 3200 1750
+F 0 "D6" H 3250 1875 50  0000 C CNN
+F 1 "MBRD6100CTTR" H 3200 1450 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3900 2050 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/MBRD6100CT%20N0811%20REV.A.pdf" H 3400 1350 50  0001 C CNN
+F 4 "1655-1487-1-ND " H 3700 2150 50  0001 C CNN "Digi-Key_PN"
+	1    3200 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:MBRD6100CTTR D2
+U 1 1 5F6DE9BE
+P 2850 1750
+F 0 "D2" H 2900 1875 50  0000 C CNN
+F 1 "MBRD6100CTTR" H 2850 1450 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3550 2050 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/MBRD6100CT%20N0811%20REV.A.pdf" H 3050 1350 50  0001 C CNN
+F 4 "1655-1487-1-ND " H 3350 2150 50  0001 C CNN "Digi-Key_PN"
+	1    2850 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1400 3400 1600
+Wire Wire Line
+	2750 1300 2700 1300
+Wire Wire Line
+	2700 1300 2700 1500
+Wire Wire Line
+	2700 1500 2750 1500
+Wire Wire Line
+	2750 1750 2700 1750
+Wire Wire Line
+	2700 1750 2700 1950
+Wire Wire Line
+	2700 1950 2750 1950
+Wire Wire Line
+	2700 1500 2700 1750
+Connection ~ 2700 1500
+Connection ~ 2700 1750
+Wire Wire Line
+	3100 1300 3050 1300
+Wire Wire Line
+	3050 1500 3100 1500
+Wire Wire Line
+	3100 1950 3050 1950
+Wire Wire Line
+	3050 1750 3100 1750
+$Comp
+L Diode:MBRD6100CTTR D7
+U 1 1 5F75EF10
+P 3200 2450
+F 0 "D7" H 3250 2575 50  0000 C CNN
+F 1 "MBRD6100CTTR" H 3200 2150 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3900 2750 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/MBRD6100CT%20N0811%20REV.A.pdf" H 3400 2050 50  0001 C CNN
+F 4 "1655-1487-1-ND " H 3700 2850 50  0001 C CNN "Digi-Key_PN"
+	1    3200 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:MBRD6100CTTR D3
+U 1 1 5F75EF1B
+P 2850 2450
+F 0 "D3" H 2900 2575 50  0000 C CNN
+F 1 "MBRD6100CTTR" H 2850 2150 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3550 2750 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/MBRD6100CT%20N0811%20REV.A.pdf" H 3050 2050 50  0001 C CNN
+F 4 "1655-1487-1-ND " H 3350 2850 50  0001 C CNN "Digi-Key_PN"
+	1    2850 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:MBRD6100CTTR D8
+U 1 1 5F75EF26
+P 3200 2900
+F 0 "D8" H 3250 3025 50  0000 C CNN
+F 1 "MBRD6100CTTR" H 3200 2600 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3900 3200 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/MBRD6100CT%20N0811%20REV.A.pdf" H 3400 2500 50  0001 C CNN
+F 4 "1655-1487-1-ND " H 3700 3300 50  0001 C CNN "Digi-Key_PN"
+	1    3200 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:MBRD6100CTTR D4
+U 1 1 5F75EF31
+P 2850 2900
+F 0 "D4" H 2900 3025 50  0000 C CNN
+F 1 "MBRD6100CTTR" H 2850 2600 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 3550 3200 50  0001 C CNN
+F 3 "http://www.smc-diodes.com/propdf/MBRD6100CT%20N0811%20REV.A.pdf" H 3050 2500 50  0001 C CNN
+F 4 "1655-1487-1-ND " H 3350 3300 50  0001 C CNN "Digi-Key_PN"
+	1    2850 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2550 3400 3000
+Wire Wire Line
+	2750 2450 2700 2450
+Wire Wire Line
+	2700 2450 2700 2650
+Wire Wire Line
+	2700 2650 2750 2650
+Wire Wire Line
+	2750 2900 2700 2900
+Wire Wire Line
+	2700 2900 2700 3100
+Wire Wire Line
+	2700 3100 2750 3100
+Wire Wire Line
+	2700 2650 2700 2800
+Connection ~ 2700 2650
+Connection ~ 2700 2900
+Wire Wire Line
+	3100 2450 3050 2450
+Wire Wire Line
+	3050 2650 3100 2650
+Wire Wire Line
+	3100 3100 3050 3100
+Wire Wire Line
+	3050 2900 3100 2900
+Wire Wire Line
+	3050 1200 3050 1300
+Connection ~ 3050 1300
+Wire Wire Line
+	3050 1300 3050 1400
+Wire Wire Line
+	3050 1750 3050 1850
+Wire Wire Line
+	3050 2450 3050 2550
+Wire Wire Line
+	3050 2900 3050 3000
+Connection ~ 3050 2550
+Wire Wire Line
+	3050 2550 3050 2650
+Connection ~ 3050 3000
+Wire Wire Line
+	3050 3000 3050 3100
+Connection ~ 3050 1400
+Wire Wire Line
+	3050 1400 3050 1500
+Connection ~ 3050 1850
+Wire Wire Line
+	3050 1850 3050 1950
+Wire Wire Line
+	2450 1950 2600 1950
+Wire Wire Line
+	2600 1950 2600 1200
+Wire Wire Line
+	2600 1200 3050 1200
+Wire Wire Line
+	2450 2150 3050 2150
+Connection ~ 3050 1950
+Wire Wire Line
+	3050 2150 3050 1950
+Wire Wire Line
+	2450 2250 3050 2250
+Wire Wire Line
+	3050 2250 3050 2450
+Connection ~ 3050 2450
+Wire Wire Line
+	2600 2450 2600 3200
+Wire Wire Line
+	2600 3200 3050 3200
+Wire Wire Line
+	3050 3200 3050 3100
+Wire Wire Line
+	2450 2450 2600 2450
+Connection ~ 3050 3100
+Wire Wire Line
+	2700 1950 2700 2200
+Wire Wire Line
+	2700 2200 3400 2200
+Wire Wire Line
+	3400 2200 3400 2550
+Connection ~ 2700 1950
+Connection ~ 3400 2550
+Wire Wire Line
+	3650 1600 3400 1600
+Connection ~ 3400 1600
+Wire Wire Line
+	3400 1600 3400 1850
+Wire Wire Line
+	3400 2200 3650 2200
+Connection ~ 3400 2200
+Wire Wire Line
+	3650 1750 3650 1600
+Wire Wire Line
+	3650 2050 3650 2200
+Connection ~ 3650 2200
+Wire Wire Line
+	2700 2800 3650 2800
+Connection ~ 2700 2800
+Wire Wire Line
+	2700 2800 2700 2900
+Wire Wire Line
+	3650 2350 3650 2200
+Wire Wire Line
+	3650 2800 3650 2650
+$Comp
+L power:GND #PWR03
+U 1 1 5F914DCC
+P 3400 3250
+F 0 "#PWR03" H 3400 3000 50  0001 C CNN
+F 1 "GND" H 3405 3077 50  0000 C CNN
+F 2 "" H 3400 3250 50  0001 C CNN
+F 3 "" H 3400 3250 50  0001 C CNN
+	1    3400 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3250 3400 3000
+Connection ~ 3400 3000
+Wire Wire Line
+	1600 1950 1600 2450
+Connection ~ 1700 2150
+$Comp
+L Device:LED D9
+U 1 1 6056482F
+P 4150 4950
+AR Path="/6056482F" Ref="D9"  Part="1" 
+AR Path="/604F4D64/6056482F" Ref="D?"  Part="1" 
+AR Path="/6052D98C/6056482F" Ref="D?"  Part="1" 
+AR Path="/6052DE25/6056482F" Ref="D?"  Part="1" 
+AR Path="/6052E28A/6056482F" Ref="D?"  Part="1" 
+AR Path="/6052E710/6056482F" Ref="D?"  Part="1" 
+AR Path="/6052EBAB/6056482F" Ref="D?"  Part="1" 
+F 0 "D9" V 4189 4832 50  0000 R CNN
+F 1 "LED" V 4098 4832 50  0000 R CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 4150 4950 50  0001 C CNN
+F 3 "~" H 4150 4950 50  0001 C CNN
+F 4 "160-1182-1-ND" H 4150 4950 50  0001 C CNN "Digi-Key_PN"
+F 5 "https://www.digikey.ca/en/products/detail/lite-on-inc/LTST-C190EKT/269229?s=N4IgTCBcDaIIwDYAMBaOcAcY0oHIBEQBdAXyA" H 4150 4950 50  0001 C CNN "DK_Detail_Page"
+F 6 "LED RED CLEAR CHIP SMD" H 4150 4950 50  0001 C CNN "Description"
+	1    4150 4950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60564837
+P 4450 5200
+AR Path="/60564837" Ref="R1"  Part="1" 
+AR Path="/604F4D64/60564837" Ref="R?"  Part="1" 
+AR Path="/6052D98C/60564837" Ref="R?"  Part="1" 
+AR Path="/6052DE25/60564837" Ref="R?"  Part="1" 
+AR Path="/6052E28A/60564837" Ref="R?"  Part="1" 
+AR Path="/6052E710/60564837" Ref="R?"  Part="1" 
+AR Path="/6052EBAB/60564837" Ref="R?"  Part="1" 
+F 0 "R1" H 4520 5246 50  0000 L CNN
+F 1 "1.5K" H 4520 5155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4380 5200 50  0001 C CNN
+F 3 "~" H 4450 5200 50  0001 C CNN
+F 4 "RES 1.5K OHM 1% 1/10W 0603" H 4450 5200 50  0001 C CNN "Description"
+F 5 "CRCW06031K50FKEAC" H 4450 5200 50  0001 C CNN "Digi-Key_PN"
+	1    4450 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 605677B1
+P 3600 5000
+F 0 "J2" H 3518 5217 50  0000 C CNN
+F 1 "power led" H 3518 5126 50  0000 C CNN
+F 2 "Connector_Terminal_Block:TerminalBlock_1x02_P2.54mm_Horizontal" H 3600 5000 50  0001 C CNN
+F 3 "~" H 3600 5000 50  0001 C CNN
+F 4 "ED10561-ND‎" H 3600 5000 50  0001 C CNN "Digi-Key_PN"
+	1    3600 5000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1050 2150 1700 2150
+$Sheet
+S 4950 2050 600  350 
+U 5F6A0364
+F0 "opamp_supply" 50
+F1 "opamp_supply.sch" 50
+F2 "vb+" O R 5550 2100 50 
+F3 "vb-" O R 5550 2200 50 
+F4 "V_POS" I L 4950 2100 50 
+F5 "V_NEG" I L 4950 2300 50 
+F6 "GND" I L 4950 2200 50 
+$EndSheet
+Wire Wire Line
+	3650 1600 4100 1600
+Connection ~ 3650 1600
+Wire Wire Line
+	3650 2800 4100 2800
+Connection ~ 3650 2800
+Wire Wire Line
+	3800 5000 3950 5000
+Wire Wire Line
+	3950 5000 3950 4800
+Wire Wire Line
+	3950 4800 4150 4800
+Connection ~ 4150 4800
+Wire Wire Line
+	4150 5100 3800 5100
+Connection ~ 4150 5100
+$Comp
+L power:GND #PWR0101
+U 1 1 5F7E3095
+P 1300 2300
+F 0 "#PWR0101" H 1300 2050 50  0001 C CNN
+F 1 "GND" H 1305 2127 50  0000 C CNN
+F 2 "" H 1300 2300 50  0001 C CNN
+F 3 "" H 1300 2300 50  0001 C CNN
+	1    1300 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 2300 1150 2300
+Connection ~ 1150 2300
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5F7E83A2
+P 4100 2800
+F 0 "#FLG0101" H 4100 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 2973 50  0000 C CNN
+F 2 "" H 4100 2800 50  0001 C CNN
+F 3 "~" H 4100 2800 50  0001 C CNN
+	1    4100 2800
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 2800
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F7E99BF
+P 4100 1600
+F 0 "#FLG0102" H 4100 1675 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 1773 50  0000 C CNN
+F 2 "" H 4100 1600 50  0001 C CNN
+F 3 "~" H 4100 1600 50  0001 C CNN
+	1    4100 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 1600
+Wire Wire Line
+	3650 2200 4100 2200
+Wire Wire Line
+	5550 2100 5750 2100
+Wire Wire Line
+	5750 2100 5750 2800
+Wire Wire Line
+	5750 2800 5900 2800
+Wire Wire Line
+	5550 2200 5700 2200
+Wire Wire Line
+	5700 2200 5700 3000
+Wire Wire Line
+	5700 3000 5900 3000
+Wire Wire Line
+	5900 3500 5750 3500
+Wire Wire Line
+	5750 3500 5750 2800
+Connection ~ 5750 2800
+Wire Wire Line
+	5900 3700 5700 3700
+Wire Wire Line
+	5700 3700 5700 3000
+Connection ~ 5700 3000
+Wire Wire Line
+	4850 1600 4850 2100
+Wire Wire Line
+	4750 2800 4750 3100
+Connection ~ 4750 2800
+Wire Wire Line
+	4950 2100 4850 2100
+Connection ~ 4800 2200
+Connection ~ 4850 2100
+Wire Wire Line
+	4850 2100 4850 2700
+Wire Wire Line
+	4800 2200 4950 2200
+Wire Wire Line
+	4800 2200 4800 2900
+Wire Wire Line
+	4950 2300 4750 2300
+Wire Wire Line
+	4750 2300 4750 2800
+Wire Wire Line
+	5900 2700 4850 2700
+Wire Wire Line
+	5900 3400 4850 3400
+Wire Wire Line
+	4850 3400 4850 2700
+Connection ~ 4850 2700
+Connection ~ 4850 3400
+Wire Wire Line
+	5900 3800 4750 3800
+Connection ~ 4750 3800
+Wire Wire Line
+	4800 3600 5900 3600
+Wire Wire Line
+	5900 3100 4750 3100
+Connection ~ 4750 3100
+Wire Wire Line
+	4750 3100 4750 3800
+Wire Wire Line
+	5900 2900 4800 2900
+Connection ~ 4800 2900
+Wire Wire Line
+	4800 2900 4800 3600
+Wire Wire Line
+	4150 4800 4850 4800
+Wire Wire Line
+	4750 5200 4600 5200
+Wire Wire Line
+	4300 5200 4150 5200
+Wire Wire Line
+	4150 5100 4150 5200
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F9E3370
+P 4100 2200
+F 0 "#FLG0103" H 4100 2275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4100 2373 50  0000 C CNN
+F 2 "" H 4100 2200 50  0001 C CNN
+F 3 "~" H 4100 2200 50  0001 C CNN
+	1    4100 2200
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 2200
+Wire Wire Line
+	4100 2200 4800 2200
+Wire Wire Line
+	4100 1600 4850 1600
+Wire Wire Line
+	4100 2800 4750 2800
+Wire Wire Line
+	4750 3800 4750 5200
+Wire Wire Line
+	4850 3400 4850 4800
+$Sheet
+S 5900 3350 550  500 
+U 6052D98C
+F0 "REG2" 50
+F1 "reg_ch2.sch" 50
+F2 "V_POS" I L 5900 3400 50 
+F3 "vb+" I L 5900 3500 50 
+F4 "vb-" I L 5900 3700 50 
+F5 "V_NEG" I L 5900 3800 50 
+F6 "GND" I L 5900 3600 50 
+$EndSheet
+$Sheet
+S 5900 2650 550  500 
+U 604F4D64
+F0 "REG1" 50
+F1 "reg_ch1.sch" 50
+F2 "V_POS" I L 5900 2700 50 
+F3 "vb+" I L 5900 2800 50 
+F4 "vb-" I L 5900 3000 50 
+F5 "V_NEG" I L 5900 3100 50 
+F6 "GND" I L 5900 2900 50 
+$EndSheet
+$EndSCHEMATC

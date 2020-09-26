@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name power_supply_local)(type Legacy)(uri "/mnt/hd/Project/travnet/radioshack homemade power supply/updated/opamp_power_supply/opamp_power_supply-cache.lib")(options "")(descr "Symbols specific to this project"))
+  (lib (name opamp_power_supply-rescue)(type Legacy)(uri ${KIPRJMOD}/opamp_power_supply-rescue.lib)(options "")(descr ""))
+)
