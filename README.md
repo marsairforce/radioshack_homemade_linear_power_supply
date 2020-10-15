@@ -1,6 +1,24 @@
 # Vintage Adjustable Linear Power Supply
 
+Updating and improving on a very early project I built.
+
+* Partly because I want something to do more things - dual tracking adjustable regulated outputs.
+* Partly because I wanted to see how far I have come in my design skills from 10 year old me.
+* Partly because I am bored
+
+ I have been wanting to get more into analog circuits, like op-amp circuits and amplifiers. Building these on breadboards has always been challenging for me because I have always had only one bench power supply.  I have a modern bench power supply, but it also only has one output on it.
+
 ![old version together](doc/IMG_0074.jpg)
+
+## TL;DR
+
+![front assembled](updated/build/IMG_0437.jpg)
+
+This is now a dual channel, double trackking voltage power supply.
+
+Each channel can do about +/-1.2V to +/-20V at about 1A
+
+## Analysis
 
 I created this (I think) when I was in grade 4. So probably around 1987?
 
@@ -98,7 +116,6 @@ The dual tracking adjustable supply is neat as I do not have this with my existi
 
 I think it is going to be challenging to fit all this stuff into this small chassis.
 
-
 I compromised and designed a dual output dual tracking power supply. This gives me two channels of adjustable +/- voltage.
 
 ![3dmodel](updated/3dmodel.png)
@@ -145,5 +162,59 @@ I ordered the PCB from
 
 <a href="https://oshpark.com/shared_projects/tLXbXLEt"><img src="https://oshpark.com/packs/media/images/badge-5f4e3bf4bf68f72ff88bd92e0089e9cf.png" alt="Order from OSH Park"></img></a>
 
-As of October 2020, I am still waiting for the board to arrive.
+It arrived a few weeks later.
 
+I had the parts all ready to go. I ordered enough to build 3 modules. Because I pay for and get 3 boards anyway!. Sometimes that is a nuissance. But sometimes you can use it as a feature like this I guess.
+
+I plan to build one into this power supply, to build a stand-alone op-amp power supply in a box. Where I set the outputs to +/-15V and +/-12V. And to have another one for use in a tube amplifier project idea I am still designing.
+
+## Assembly
+
+I built all three boards at the same time. At each step where I could I did some testing to make sure it was working.
+
+* The transformer, fuze, and input connector, rectifier diodes - able to see rectified DC ripples on the filter capacitor pads.
+* The capacitors - able to see DC voltage
+* The 15V regulators - able to measure +/-15V
+* The capacitors and resistors - bulk components. Test for continuity.
+* The regulators - measure and test adjusting the voltage.
+
+Put the board on some standoffs and mount it into the chassis
+
+![board mounted](updated/build/IMG_0339.jpg)
+
+I didn't think about the potentiometers. I was just going to use the one I had from before. But when I was putting the new power supply PCB into the case I discovered it is not working very well. It feels all loose. I probably dropped this at some time and broke it. It still works but is very jittery when you turn it.
+
+Time to replace this.
+
+Since I am replacing it anyway and I do have space to add another potentiometer for the second channel I might as well do that now.
+
+![knobs](updated/build/IMG_0430.jpg)
+
+And get some nice knobs for this. I am tired of the classic single knob I have had forever.
+
+I will need some more output connectors on the back. Drill in some new holes and mount the connectors.
+
+![new connectors](updated/build/IMG_0432.jpg)
+
+And then wire up the connectors to the screw terminals on the PCB.
+
+![wired connectors](updated/build/IMG_0434.jpg)
+
+Hook up the meter.
+
+![meter wires](updated/build/IMG_0435.jpg)
+
+I only bother tracking the positive voltage, since the negative will track what ever the positive is but be opposite polarity right.
+
+I added a toggle switch beside the meter so I can switch which channel is currently being displayed on the meter.
+
+Fix the indicator LED and put it back together.
+![indicator](updated/build/IMG_0436.jpg)
+
+A little bit of label maker ties it all together.
+
+![front assembled](updated/build/IMG_0437.jpg)
+
+![rear assembled](updated/build/IMG_0438.jpg)
+
+Ready to roll.
